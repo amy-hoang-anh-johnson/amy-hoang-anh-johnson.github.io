@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
     <body>
+      <script type="text/javascript">
+          function redirectMobileHandler() {
+            const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+              if(width < 601) {
+              window.location = 'test1.html';
+              }
+          }
+
+          window.onload = redirectMobileHandler();
+          window.onresize = () => redirectMobileHandler();
+      </script>
+      
       <div class="mainBody">
         <div class="menu">
           <div class="logo">
