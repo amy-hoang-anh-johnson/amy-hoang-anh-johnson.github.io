@@ -1,0 +1,155 @@
+@font-face {
+  font-family: text;
+  src: url(Roboto_mono/static/RobotoMono-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Main Body */
+.Main {
+  width: 100vw;
+  height: 100%;
+  background-color: #293241;
+  display: flex;
+  font-family: text;
+}
+
+
+/* Menu */
+.Menu {
+  width: 12.5%;
+  height: 100%;
+  background-color: #293241;
+}
+
+.Logo {
+  width: 100%;
+  height: 15vh;
+}
+
+.MenuContent {
+  margin: 0vh 0vh 0vh 0vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.MenuContent1 {
+  width: 90%;
+}
+
+.Home, .About, .Portfolio, .Resume {
+  width: 100%;
+  height: 7.5vh;
+  background-color: white;
+  text-align: center;
+  line-height: 7.5vh;
+}
+
+.About, .Portfolio, .Resume {
+  margin: 1vh 0vh 0vh 0vh;
+}
+
+
+/* Contents */
+.Main2 {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* title */
+.Header {
+  width: 100%;
+  height: 15vh;
+  background-color: #3D5A80;
+  line-height: 15vh;
+  padding: 0vh 0vh 0vh 5vh;
+  font-size: 200%;
+}
+
+.Header p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+}
+
+/* Actual Content */
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
+}
+
+.text, .images {
+  width: 100%;
+}
+
+.text {
+  padding: 1.5vh 0vh 5vh 0vh;
+  font-size: 150%;
+}
+
+.text1 {
+  margin: 0vh 0vh 0vh 5vh;
+}
+
+.text1 p {
+  font-size: 2vh;
+}
+
+.text-shadow {
+  text-shadow:
+    -2px -2px white,
+    -2px 2px white,
+    2px -2px white,
+    2px 2px white;
+}
+
+.underline {
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 -0.075em white,
+    inset 0 -0.1em #ee6c4d;
+  display: inline;
+}
+
+.images {
+  display: flex;
+}
+
+.images1 {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1vh 0vh 0vh 0vh;
+  font-size: 90%;
+}
+
+.images2 {
+  width: 60%;
+  text-align: left;
+  margin: 1vh 1vh 1vh 1vh;
+}
+
+.images2 p {
+  padding: 0vh 0vh 0vh 0vh;
+  line-height: 120%;
+}
+
+.image {
+  width: 40vh;
+  height: 25vh;
+  background-color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
