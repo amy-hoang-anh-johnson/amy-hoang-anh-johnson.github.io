@@ -1,6 +1,6 @@
 @font-face {
   font-family: text;
-  src: url(Roboto_mono/static/RobotoMono-Regular.ttf);
+  src: url(RobotoMono-Regular.ttf);
 }
 
 body {
@@ -42,16 +42,30 @@ body {
   width: 90%;
 }
 
+.MenuContent1 a {
+  text-decoration: none;
+}
+
 .Home, .About, .Portfolio, .Resume {
   width: 100%;
   height: 7.5vh;
   background-color: white;
   text-align: center;
   line-height: 7.5vh;
+  transition: 0.8s;
+  background: -webkit-linear-gradient(0deg, #FFF 50%, #ee6c4d 50%);
+  background-size: 200% 7.5vh;
+  color: black;
 }
 
 .About, .Portfolio, .Resume {
   margin: 1vh 0vh 0vh 0vh;
+}
+
+.Home:hover, .About:hover, .Portfolio:hover, .Resume:hover {
+  background-position: -100% 0;
+  color: white;
+  text-decoration: none;
 }
 
 
