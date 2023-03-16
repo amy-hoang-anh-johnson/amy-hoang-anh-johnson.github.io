@@ -12,10 +12,9 @@ body {
   grid-template-areas:
     'a' 'b';
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #081C15;
   font-family: text;
-
 }
 
 /* width */
@@ -41,7 +40,6 @@ body {
 /* Menu */
 .Menu {
   width: 100%;
-  height: 100%;
   background-color: #081C15;
 }
 
@@ -94,10 +92,9 @@ body {
 /* Contents */
 .Main2 {
   width: 100%;
-  height: 100%;
   background-color: white;
-  min-height: 100vh;
   top: auto;
+  padding: 0vh 0vh -10vh 0vh;
 }
 
 /* title */
@@ -119,7 +116,6 @@ body {
 /* Actual Content */
 .content {
   width: 100%;
-  height: 100%;
   background-color: white;
 }
 
@@ -141,11 +137,10 @@ body {
 }
 
 .underline {
-  background-size: 0px 0em;
-  width: 0%;
-  box-shadow:
-    inset 0 -0.11em #ee6c4d;
-  display: inline;
+  border-color: #ee6c4d;
+  border-style: solid;
+  border-width: 0vh 0vh 0.5vh 0vh;
+  margin-bottom: 0.5vh;
 }
 
 .images {
@@ -208,22 +203,32 @@ body {
 
 .content1 {
   width: 100%;
-  height: auto;
   background-color: white;
   display: flex;
   justify-content: space-between;
   opacity: 0%;
   animation: load 1s forwards 0s;
+  padding: 0vh 0vh 0vh 0vh;
 }
 
 .content2 {
   width: 78%;
 }
 
+.summary {
+  width: 90%;
+  padding: 0vh 0vh 0vh 5vh;
+  font-size: 2.5vh;
+}
+
 .work {
   width: 92.5%;
-  height: auto;
   padding: 1vh 0vh 3vh 5vh;
+}
+
+.work1 {
+  width: 92.5%;
+  padding: 1vh 0vh 0vh 5vh;
 }
 
 .title {
@@ -306,7 +311,7 @@ body {
 
 .sidebarContent {
   position: sticky;
-  top: 2.5vh;
+  top: 2vh;
 }
 
 .contactsSidebar {
@@ -355,6 +360,9 @@ body {
 
 .skillBox p:nth-child(1) {
   font-size: 2.5vh;
+  padding: 0vh 0vh 1vh 0vh;
+  text-decoration: underline;
+  text-underline-offset: 20%;
 }
 
 .skillbg {
@@ -384,4 +392,33 @@ body {
 @keyframes UI {
   0% {width: 0%;}
   100% {width: 75%;}
+}
+
+@keyframes Java {
+  0% {width: 0%;}
+  100% {width: 60%;}
+}
+
+.toolBox {
+  margin: -2.5vh 0vh 0vh 0vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.toolBox p:nth-child(1){
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+.toolBox p {
+  margin: 2vh 0vh 0vh 0vh;
+  line-height: 2.5vh;
+}
+
+.b {
+  font-size: 2.1vh;
+}
+
+.spaceside {
+  height: 5vh;
 }
