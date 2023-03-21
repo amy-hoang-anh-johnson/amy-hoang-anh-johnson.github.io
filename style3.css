@@ -71,7 +71,7 @@
   /* Contents */
   .content {
     height: 100%;
-    min-height: 400vh;
+    min-height: 200vh;
     margin: 0vh 0vh 0vh 5%;
   }
 
@@ -112,22 +112,45 @@
     border-style: solid;
     border-width: 0vh 0vh 0.3vh 0vh;
     padding-bottom: -1vh;
+    position: inline;
   }
 
+  .button1 {
+    margin: 0vh 2vh 0vh 0vh;
+    font-size: 2.5vh;
+    transition: 0.2s;
+    transform:rotate(0deg);
+    transition: 0.2s linear;
+  }
+
+  .rotated {
+    transform:rotate(90deg);
+    transition: 0.2s linear;
+  }
+
+  .hidden_content {
+    display: none;
+    padding: 1vh 0vh 2vh 0vh;
+  }
 
   .download {
     margin: 1vh 0vh 0vh 0vh;
   }
 
   .summary {
-    margin: 0vh 0vh 3vh 0vh;
+    margin: 0vh 0vh 0vh 0vh;
   }
 
   .summary p {
     margin: -1vh 0vh 0vh 0vh;
   }
 
+  .summary2 {
+    margin: 0vh 0vh 0vh -1vh;
+  }
+
   .title {
+    width: 90%;
     font-size: 2vh;
     padding: 1vh 0vh 1.5vh 0vh;
     display: flex;
@@ -138,7 +161,7 @@
   }
 
   .data {
-    padding: 0vh 0vh 2vh 0vh;
+    padding: 0vh 0vh 0vh 0vh;
   }
 
   .dates, .company {
@@ -153,15 +176,92 @@
     color: black;
   }
 
-  #button, #button1, #button2, #button3  {
-    padding: 0vh 0vh 0vh 2vh;
+  /* Sidebar */
+
+  .contactsSidebar {
+    visibility: hidden;
+    height: 0;
+    display: none;
   }
 
-  #slidedown, #slidedown1, #slidedown2, #slidedown3, {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.8s ease;
+  .toolbox {
+    font-size: 2vh;
   }
+
+  .title2 {
+    font-size: 2vh;
+    width: 90%;
+  }
+
+  .title3 {
+    display: flex;
+  }
+
+  .underline1 {
+    border-color: #ee6c4d;
+    border-style: solid;
+    border-width: 0vh 0vh 0.3vh 0vh;
+    padding-bottom: -1vh;
+    position: inline;
+  }
+
+  .b {
+    font-size: 1.65vh;
+  }
+
+  .skillBox1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .skillbg {
+    width: 90%;
+    height: 2vh;
+    background-color: #95D5B2;
+    transition: 0.6s;
+  }
+
+  .skillfill {
+    width: 0%;
+    height: 2vh;
+    background-color: #74C69D;
+  }
+
+  @keyframes skillf {
+    0% {width: 0%;}
+    100% {width: 85%;}
+  }
+
+  @keyframes UI {
+    0% {width: 0%;}
+    100% {width: 75%;}
+  }
+
+  @keyframes Java {
+    0% {width: 0%;}
+    100% {width: 60%;}
+  }
+
+  .skills2 {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .skills2 p{
+    align-self: end;
+  }
+
+  .skills2 div {
+    display: flex;
+  }
+
+  .title3 {
+    display: flex;
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -249,4 +349,5 @@
     height: 100%;
     grid-area: 2 / 2 / span 1 / span 1;
   }
+
 }
