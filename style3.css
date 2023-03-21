@@ -31,6 +31,7 @@
   /* Menu */
   .logo {
     visibility: hidden;
+    display: none;
   }
 
   .menu {
@@ -40,7 +41,7 @@
   }
 
   .menuholder {
-    padding: 1vh 0vh 0vh 0vh;
+    margin: 1vh 0vh 0vh 0vh;
     display: flex;
     justify-content: space-around;
   }
