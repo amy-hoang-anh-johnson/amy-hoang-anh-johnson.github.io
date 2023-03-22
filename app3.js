@@ -22,3 +22,17 @@ $(document).ready(() => {
 }).click(function(){
   $(event.currentTarget).toggleClass('rotated');
 }) });
+
+$(document).ready(() => {
+  $(".button2").click(function(){
+  $(this).closest(".reveal").find(".hidden_content1").slideToggle();
+}).click(function(){
+  $(event.currentTarget).toggleClass('rotated');
+}) });
+
+$(document).ready(() => {
+  $(".button3").click(function(){
+  $(this).closest(".reveal").find(".hidden_content2").slideToggle();
+}).click(function(){
+  $(event.currentTarget).toggleClass('rotated');
+}) });

@@ -12,6 +12,8 @@
     font-family: text;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
   }
 
   /* title */
@@ -113,14 +115,14 @@
     position: inline;
   }
 
-  .button1 {
+  .button1, .button2, .button3 {
     margin: 0vh 2vh 0vh 0vh;
     transform:rotate(0deg);
     transition: 0.2s linear;
     width: 0%;
     height: 0%;
     border-top: 1vh solid transparent;
-  	border-left: 2vh solid green;
+  	border-left: 1vh solid green;
   	border-bottom: 1vh solid transparent;
   }
 
@@ -130,7 +132,7 @@
   }
 
 
-  .hidden_content {
+  .hidden_content, .hidden_content1, .hidden_content2 {
     display: none;
     padding: 1vh 0vh 2vh 0vh;
   }
@@ -151,14 +153,14 @@
     margin: -1vh 0vh 0vh 0vh;
   }
 
-  .summary2 {
+  .summary2, .summary3 {
     margin: -0.5vh 0vh 0vh -1vh;
   }
 
-  .title {
+  .title, .title1 {
     width: 90%;
     font-size: 2vh;
-    padding: 1vh 0vh 1.5vh 0vh;
+    padding: 0vh 0vh 1.5vh 0vh;
     display: flex;
   }
 
@@ -189,17 +191,8 @@
     display: none;
   }
 
-  .toolbox {
-    font-size: 2vh;
-  }
-
-  .title2 {
-    font-size: 2vh;
-    width: 90%;
-  }
-
-  .title3 {
-    display: flex;
+  .toolbox p{
+    font-size: 1.5vh;
   }
 
   .underline1 {
@@ -211,7 +204,7 @@
   }
 
   .b {
-    font-size: 1.65vh;
+    
   }
 
   .skillBox1 {
@@ -280,14 +273,13 @@
 @media only screen and (min-width: 600px) {
   body {
       width: 100%;
-      height: 100%;
-      min-height: 100vh;
+      height: 100vh;
       background-color: white;
       font-family: text;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       display: grid;
-      grid-template-columns: 15% 85%;
+      grid-template-columns: 12.5% 87.5%;
     }
 
     ::-webkit-scrollbar {
@@ -314,17 +306,21 @@
   .menu {
     width: 100%;
     height: 100%;
-    position: sticky;
-    top: 0;
     background-color: #081C15;
-    font-size: 4vh;
     grid-area: 1 / 1 / span 2 / span 1;
-    display: flex;
-    justify-content: center;
+  }
+
+  .menu1 {
+    width: 100%;
+    height: 100%;
+    font-size: 4vh;
   }
 
   .menuholder {
     width: 90%;
+    position: sticky;
+    top: 0vh;
+    margin: auto;
   }
 
   .menuholder a {
@@ -337,7 +333,7 @@
     }
 
   .button {
-    margin: 0vh auto 0vh auto;
+    margin: 0vh auto 2vh auto;
     width: 100%;
     height: 7.5vh;
     background-color: white;
@@ -348,7 +344,6 @@
     background-size: 200% 7.5vh;
     color: black;
     font-size: 2.5vh;
-    margin: 0vh 0vh 2vh 0vh;
   }
 
   .button:hover {
@@ -364,7 +359,7 @@
     grid-area: 1 / 2 / span 1 / span 1;
     background-color: #1B4332;
     line-height: 15vh;
-    padding: 0vh 0vh 0vh 5vh;
+    padding: 0vh 0vh 0vh 2.5vh;
     font-size: 5vh;
     color: white;
   }
@@ -378,10 +373,9 @@
 
   .content {
     width: 100%;
-    height: 100%;
     grid-area: 2 / 2 / span 1 / span 1;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 77.5% 22.5%;
   }
 
   .content2contact {
@@ -391,17 +385,90 @@
   .content2 {
     grid-area: 1 / 1 / span 1 / span 1;
     width: 90%;
-    margin: 2.5vh 0vh 0vh 7.5vh;
+    min-height: 100vh;
+    margin: 2vh 0vh 0vh 5vh;
+  }
+
+  .work {
+    padding: 1vh 0vh 0vh 0vh;
+  }
+
+  .title {
+  width: 100%;
+  height: 5vh;
   }
 
   .summary2 {
     font-size: 3vh;
   }
 
-  .work {
-    padding: 1vh 0vh 3vh 0vh;
+  .hidden_content {
+    font-size: 2.25vh;
+    padding: 0vh 0vh 8vh 0vh;
   }
 
+  .hidden_content2 {
+    padding: 0vh;
+    font-size: 2.25vh;
+  }
+
+  .underline {
+  border-color: #ee6c4d;
+  border-style: solid;
+  border-width: 0vh 0vh 0.5vh 0vh;
+  margin-bottom: 0.5vh;
+}
+
+  .data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1vh 0vh 0vh 0vh;
+  }
+
+  .dates {
+    grid-area: 1 / 1 / span 1 / span 1;
+    height: 100%;
+    font-size: 2.7vh;
+  }
+
+  .datesbox {
+    height: 100%;
+  }
+
+  .datesbox div {
+    position: sticky;
+    top: 0;
+  }
+
+  .company {
+    grid-area: 'b';
+    font-size: 2.7vh;
+  }
+
+  .space {
+    grid-area: 'c'
+  }
+
+  .experience {
+    grid-area: 'd';
+  }
+
+  .experience ul {
+    margin-left: -3vw;
+  }
+
+  .experience li {
+    color: #52B788;
+  }
+
+  .experience li span {
+    color: black;
+  }
+
+  .hidden_content {
+    margin: 1vh 0vh 0vh 0vh;
+  }
 
   /* reveal */
 
@@ -433,7 +500,113 @@
 
   .sidebar {
     grid-area: 1 / 2 / span 1 / span 1;
+    height: 100%;
+    margin: 0vh;
   }
 
+  .sidebar, .sidebar a, .sidebar p, .sidebar span {
+    background-color: #40916C;
+    color: white;
+    transition: 0.3s;
+  }
 
+  .sidebar:hover, .sidebar:hover a, .sidebar:hover p, .sidebar:hover span{
+    background-color: #B7E4C7;
+    color: black;
+  }
+
+  .sidebar2 {
+    height: 100%;
+    width: 100%;
+    margin: 0vh;
+  }
+
+  .sidebarContent {
+    position: sticky;
+    top: 2vh;
+    width: 90%;
+    margin: auto;
+  }
+
+  .contactsSidebar {
+    text-align: center;
+  }
+  
+  .contactsSidebar p {
+    line-height: 1vh;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+  }
+
+  .Contact {
+    font-size: 3vh;
+  }
+  
+  .hoverA {
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    box-shadow: inset 0 0 0 0 #52B788;
+    transition: box-shadow .3s linear;
+    font-size: 2vh;
+  }
+  
+  .hoverA:hover {
+    box-shadow: inset 300px 0 0 0 #52B788;
+  }
+
+  .underline1 {
+    font-size: 2.5vh;
+    padding: 0vh 0vh 1vh 0vh;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+  }
+
+  .skillbg {
+    width: 100%;
+    height: 2vh;
+    background-color: #95D5B2;
+    transition: 0.6s;
+  }
+  
+  .sidebar:hover .skillbg {
+    width: 100%;
+    height: 2vh;
+    background-color: #D8F3DC;
+  }
+  
+  .skillfill {
+    width: 0%;
+    height: 2vh;
+    background-color: #74C69D;
+  }
+  
+  @keyframes skillf {
+    0% {width: 0%;}
+    100% {width: 85%;}
+  }
+  
+  @keyframes UI {
+    0% {width: 0%;}
+    100% {width: 75%;}
+  }
+  
+  @keyframes Java {
+    0% {width: 0%;}
+    100% {width: 60%;}
+  }
+
+  .skillBox p {
+    font-size: 2vh;
+    line-height: 1vh;
+  }
+
+  .hidden_content1 {
+    margin: 0vh 0vh 2.5vh 0vh;
+  }
+
+  .toolbox {
+    height: 100%;
+  }
 }
