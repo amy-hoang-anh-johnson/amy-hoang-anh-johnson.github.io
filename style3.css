@@ -134,10 +134,21 @@
 
   .hidden_content, .hidden_content1, .hidden_content2 {
     display: none;
+    font-size: 2vh;
+    overflow-wrap: break-word;
+    width: 90%;
+  }
+
+  .hidden_content {
+    padding: 2vh 0vh 4vh 0vh;
+  }
+
+  .hidden_content1, .hidden_content2 {
     padding: 1vh 0vh 2vh 0vh;
   }
 
   .content2contact {
+    font-size: 2.25vh;
     padding: 0vh 0vh 2vh 0vh;
   }
 
@@ -159,7 +170,7 @@
 
   .title, .title1 {
     width: 90%;
-    font-size: 2vh;
+    font-size: 2.75vh;
     padding: 0vh 0vh 1.5vh 0vh;
     display: flex;
   }
@@ -173,7 +184,7 @@
   }
 
   .dates, .company {
-    font-size: 1.65vh;
+    font-size: 2.25vh;
   }
 
   li {
@@ -201,10 +212,6 @@
     border-width: 0vh 0vh 0.3vh 0vh;
     padding-bottom: -1vh;
     position: inline;
-  }
-
-  .b {
-    
   }
 
   .skillBox1 {
@@ -397,16 +404,21 @@
   height: 5vh;
   }
 
+  .summary {
+    padding: 0vh 0vh 3vh 0vh;
+  }
+
   .summary2 {
     font-size: 3vh;
+    padding: 0vh 0vh 0vh 0vh;
   }
 
   .hidden_content {
-    font-size: 2.25vh;
+    font-size: 2.5vh;
   }
 
   .hidden_content2 {
-    font-size: 2.25vh;
+    font-size: 2.5vh;
   }
 
   .underline {
@@ -489,6 +501,10 @@
     }
   }
 
+  .work1 {
+    padding: 0vh 0vh 10vh 0vh;
+  }
+
   /* sidebar */
 
   .sidebar {
@@ -507,12 +523,11 @@
   }
 
   .sidebar2 {
-    height: 280vh;
+    min-height: 270vh;
     width: 100%;
   }
 
   .sidebarContent {
-    height: 100vh;
     position: sticky;
     top: 2vh;
     width: 90%;
@@ -548,7 +563,7 @@
   }
 
   .underline1 {
-    font-size: 2.5vh;
+    font-size: 2.75vh;
     padding: 0vh 0vh 1vh 0vh;
     text-decoration: underline;
     text-underline-offset: 20%;
@@ -589,15 +604,30 @@
   }
 
   .skillBox p {
-    font-size: 2vh;
     line-height: 1vh;
+  }
+
+  .hidden_content1 p {
+    font-size: 2.1vh;
+  }
+
+  .skillBox {
+    padding: 2vh 0vh 0vh 0vh;
+  }
+
+  .skillBox1 div:nth-of-type(2) {
+    padding: 1vh 0vh 0vh 0vh;
+  }
+
+  .b {
+    font-size: 2.5vh;
   }
 
   .hidden_content1 {
     margin: 0vh 0vh 0vh 0vh;
   }
 
-  .toolbox {
-    height: 100%;
+  .toolBox p {
+    font-size: 2.1vh;
   }
 }
