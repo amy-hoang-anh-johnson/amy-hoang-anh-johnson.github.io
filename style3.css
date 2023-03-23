@@ -270,6 +270,10 @@
     display: flex;
   }
 
+  .b {
+    font-size: 2.25vh;
+  }
+  
   /* footer */
 
   .footer {
@@ -525,7 +529,7 @@
   }
 
   .sidebar2 {
-    min-height: 270vh;
+    min-height: 310vh;
     width: 100%;
   }
 
@@ -630,6 +634,10 @@
   }
 
   .toolBox p {
+    font-size: 2.1vh;
+  }
+
+  .toolBox1 p {
     font-size: 2.1vh;
   }
 }
