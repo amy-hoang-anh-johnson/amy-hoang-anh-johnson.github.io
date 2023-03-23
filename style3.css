@@ -273,7 +273,6 @@
 @media only screen and (min-width: 600px) {
   body {
       width: 100%;
-      height: 100vh;
       background-color: white;
       font-family: text;
       margin: 0;
@@ -404,11 +403,9 @@
 
   .hidden_content {
     font-size: 2.25vh;
-    padding: 0vh 0vh 8vh 0vh;
   }
 
   .hidden_content2 {
-    padding: 0vh;
     font-size: 2.25vh;
   }
 
@@ -427,7 +424,7 @@
   }
 
   .dates {
-    grid-area: 1 / 1 / span 1 / span 1;
+    grid-area: 1 / 1 / span 2 / span 1;
     height: 100%;
     font-size: 2.7vh;
   }
@@ -442,16 +439,12 @@
   }
 
   .company {
-    grid-area: 'b';
+    grid-area: 1 / 2 / span 1 / span 1;
     font-size: 2.7vh;
   }
 
-  .space {
-    grid-area: 'c'
-  }
-
   .experience {
-    grid-area: 'd';
+    grid-area: 2 / 2 / span 1 / span 1;
   }
 
   .experience ul {
@@ -500,8 +493,6 @@
 
   .sidebar {
     grid-area: 1 / 2 / span 1 / span 1;
-    height: 100%;
-    margin: 0vh;
   }
 
   .sidebar, .sidebar a, .sidebar p, .sidebar span {
@@ -516,12 +507,12 @@
   }
 
   .sidebar2 {
-    height: 100%;
+    height: 280vh;
     width: 100%;
-    margin: 0vh;
   }
 
   .sidebarContent {
+    height: 100vh;
     position: sticky;
     top: 2vh;
     width: 90%;
@@ -603,7 +594,7 @@
   }
 
   .hidden_content1 {
-    margin: 0vh 0vh 2.5vh 0vh;
+    margin: 0vh 0vh 0vh 0vh;
   }
 
   .toolbox {

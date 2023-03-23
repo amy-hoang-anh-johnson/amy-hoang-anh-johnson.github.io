@@ -1,236 +1,266 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style1.css">
-  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume - Amy Hoang Anh Johnson</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://raw.githubusercontent.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
+  <script defer src="app3.js"></script>
 </head>
 <body>
-      <div class="Menu">
-      <div class="Logo"></div>
-      <div class="MenuContent">
-        <div class="MenuContent1">
-          <a href="index.html"><div class="Home">
-            Home
-          </div></a>
-          <a href="about.html"><div class="About">
-            About
-          </div></a>
-          <a href="portfolio.html"><div class="Portfolio">
-            Portfolio
-          </div></a>
-          <a href="cv.html"><div class="Resume">
-            Resume
-          </div></a>
+  <!-- Header -->
+  <div class="header">
+    <div class="headerholder">
+        <div>Resume -&nbsp;</div>
+        <div>Amy Hoang Anh Johnson</div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu">
+      <div class="menu1">
+        <div class="menuholder">
+          <div class="logo"></div>
+          <a href="index.html"><div class="button">Home</div></a>
+          <a href="about.html"><div class="button">About</div></a>
+          <a href="portfolio.html"><div class="button">Work</div></a>
+          <a href="cv.html"><div class="button">Resume</div></a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- Summary, Work -->
+      <div class="content2">
+        <div class="content2contact">
+          <p>Based in the UK
+            <br>
+            Email: amyhoanganhjohnson@gmail.com
+            <br>
+            Phone: +44 7587 809762 </p>
+        <div class="download">Download Resume in: <a href="pdf">PDF</a> or <a href="doc">DOCX</a></div>
+      </div>
+        <!-- Summary -->
+        <div class="summary reveal">
+          <div class="title"><div class="button1"></div><span class="summary2 underline">Biography</span></div>
+          <p class="hidden_content">A driven and enthusiastic professional, eager to tackle the challenges
+            of the IT industry and further career advancement. Possessing a natural
+            self-starter mindset, excelling as a solo performer and a group-minded
+            individual with strong interpersonal skills and a proven track record
+            of delivering results on time. Thrives on facing obstacles and constantly
+            seeking new challenges. Outside of work, indulging in a passion for
+            language, both foreign and programming.</p>
+        </div>
+
+        <!-- Work -->
+
+        <div class="work reveal">
+          <div class="title"><div class="button1"></div><span class="summary2 underline">Work Experience</span></div>
+          <div class="hidden_content">
+            <div class="data">
+              <div class="dates"><div class="datesbox"><div>Jan 2022 - Jan 2023</div></div></div>
+              <div class="company">Sales and Marketing Executive | TNETS Global, Birmingham</div>
+              <div class="experience">
+                <div>
+                  <ul>
+                    <li class="a"><span>Assisted in the growth of the client database of the
+                      customs broker business during Brexit, marketing toward potential
+                      and existing clients. Before joining, TNETS had 20 clients, now 35 clients.</span></li>
+                    <li><span>Led LinkedIn outreach efforts, increasing audience engagement
+                      by 500% in the first month through a thorough understanding of
+                      platform algorithms and strategic content planning,
+                      resulting in continued growth with each post.</span></li>
+                    <li><span>Conducted evaluations of potential client annual reports,
+                      analysing revenues and turnovers, and establishing effective communication
+                      with brokers across countries including the Middle East, Philippines, South Africa,
+                      and North America. Building 15+ partnerships.</span></li>
+                    <li><span>Sourced and gathered relevant information for clients,
+                      including potential investors and partnership contacts,
+                      to support business needs. Raising funds of £15,000,000+.</span></li></ul>
+                  </div>
+              </div>
+            </div>
+            <div class="data">
+              <div class="dates"><div class="datesbox"><div>Nov 2015 - Feb 2016</div></div></div>
+              <div class="company">Volunteer | Gramin Vikas Vigyan Samiti (GRAVIS), Rajasthan, India</div>
+              
+              <div class="experience">
+                <div>
+                  <ul>
+                    <li class="a"><span>Facilitated workshops for teaching English to the village children,
+                      managing to help 80% of the cohort to feel comfortable in speaking English.</span></li>
+                    <li><span>Conducted audits on water and agricultural security in a rural village,
+                      resulting in a 40% increase in requests for assistance from local households.</span></li>
+                    <li><span>Supervised and facilitated meetings in rural villages,
+                      introducing programs to promote female empowerment and increasing female participation by 70%.
+                      This led to a significant increase in women's engagement and contributions,
+                      reaching 60% in discussions.</span></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+
+        <div class="work reveal">
+          <div class="title"><div class="button1"></div><span class="summary2 underline">Education</span></div>
+          <div class="hidden_content">
+              <div class="data">
+                <div class="dates"><div class="datesbox"><div>Sep 2018 - Jul 2021</div></div></div>
+                <div class="company">Computer Science | University of Portsmouth, Portsmouth</div>
+                
+                <div class="experience">
+                  <div>
+                    <ul>
+                      <li class="a"><span>Studied: Java, Javascript, Python, SQL, Haskell, Fundamental Data Structures</span></li>
+                      <li><span>Skills enhanced: HTML, CSS, Computer Architecture (Logic Gates)</span></li>
+                      <li><span>Chosen modules: 3D Computer Graphics and Animation, Japanese</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="data">
+                <div class="dates"><div class="datesbox"><div>Sep 2016 – Jul 2018</div></div></div>
+                <div class="company">A Levels | Welbeck Defence Sixth Form College, Loughborough</div>
+                
+                <div class="experience">
+                  <div>
+                    <ul>
+                      <li class="a"><span>A Levels: Design and Technology (Systems and Control Technology), Electronics, Maths, Physics (AS) (BDE)</span></li>
+                      <li><span>Studied: PICAXE programming, Electrical engineering, Building a portfolio, Military Cadet knowledge</span></li>
+                      <li><span>Skills enhanced: Leadership and team management, Fitness management</span></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="data">
+                <div class="dates"><div class="datesbox"><div>2013 – 2015</div></div></div>
+                <div class="company">GCSEs | Tanglin Trust School (TTS), Singapore</div>
+                
+                <div class="experience">
+                  <div>
+                    <ul>
+                      <li class="a"><span>GCSEs: English (Lit and Lang), Maths, Physics, Chemistry, Biology, ICT, Art, History, Chinese (A - C) </span></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Extra Curricular -->
+
+        <div class="work1 reveal">
+          <div class="title"><div class="button1"></div><span class="summary2 underline">Extra Curricular</span></div>
+          <div class="hidden_content">
+              <div class="data">
+                <div class="dates"><div class="datesbox"><div>2021 – Present</div></div></div>
+                <div class="company">Developing Websites for my own ventures (Photography & Art) and others</div>
+                
+                <div class="experience">
+                  <div>
+                    <ul>
+                      <li class="a"><span>Developed websites; using JS, HTML, CSS, PHP.
+                        Using UI/UX layouts in Figma, and agile work methods.
+                        Improved engagement by an average of 75%, for clients and personal ventures.</span></li>
+                      <li><span>Learning to improve the overall usability and effectiveness of projects,
+                        trying to create at least 3 personal projects for my portfolio each month.</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="data">
+                <div class="dates"><div class="datesbox"><div>2018</div></div></div>
+                <div class="company">The Institute of Leadership & Management (ILM) Level 3 Award | Loughborough</div>
+                
+                <div class="experience">
+                  <div>
+                    <ul>
+                      <li class="a"><span>Growing leadership skills within cadet training challenges,
+                        finishing 1st on average, and improving team working skills; during Welbeck DSFC.</span></li>
+                      <li><span>Coached boarding house hockey, teaching 6 sessions per month;
+                        improving the house competitions by ranking 2nd each year, instead of 4th in previous years.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
     </div>
 
-      <div class="Main2">
-      <div class="Header">
-        <p>Portfolio - Amy Hoang Anh Johnson</p>
-      </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar2">
+        <div class="sidebarContent">
+          <div class="contactsSidebar">
+              <p class="Contact">Contact</p>
+              <p>Email</p>
+              <p><a href="mailto: amyhoanganhjohnson@gmail.com"><span class="hoverA">amyhoanganhjohnson@gmail.com</span></a></p>
+              <p>Phone</p>
+              <p><a href="tel: 07587809672"><span class="hoverA">+44 7587 809762</span></a></p>
+          </div>
 
-            <div class="content1">
-                <div class="content2">
-                  <div class="summary">
-                    <p>A driven and enthusiastic professional, eager to tackle the challenges
-                      of the IT industry and further career advancement. Possessing a natural
-                      self-starter mindset, excelling as a solo performer and a group-minded
-                      individual with strong interpersonal skills and a proven track record
-                      of delivering results on time. Thrives on facing obstacles and constantly
-                      seeking new challenges. Outside of work, indulging in a passion for
-                      language, both foreign and programming.</p>
-                  </div>
-                  <div class="work">
-                    <div class="title"><span class="text-shadow underline">Work Experience</span></div>
-                    <div class="data">
-                      <div class="dates">Jan 2022 - Jan 2023</div>
-                      <div class="company">Sales and Marketing Executive | TNETS Global, Birmingham</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>Assisted in the growth of the client database of the
-                              customs broker business during Brexit, marketing toward potential
-                              and existing clients. Before joining, TNETS had 20 clients, now 35 clients.</span></li>
-                            <li><span>Led LinkedIn outreach efforts, increasing audience engagement
-                              by 500% in the first month through a thorough understanding of
-                              platform algorithms and strategic content planning,
-                              resulting in continued growth with each post.</span></li>
-                            <li><span>Conducted evaluations of potential client annual reports,
-                              analysing revenues and turnovers, and establishing effective communication
-                              with brokers across countries including the Middle East, Philippines, South Africa,
-                              and North America. Building 15+ partnerships.</span></li>
-                            <li><span>Sourced and gathered relevant information for clients,
-                              including potential investors and partnership contacts,
-                              to support business needs. Raising funds of £15,000,000+.</span></li></ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="data">
-                      <div class="dates">Nov 2015 - Feb 2016</div>
-                      <div class="company">Volunteer | Gramin Vikas Vigyan Samiti (GRAVIS), Rajasthan, India</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>Facilitated workshops for teaching English to the village children,
-                              managing to help 80% of the cohort to feel comfortable in speaking English.</span></li>
-                            <li><span>Conducted audits on water and agricultural security in a rural village,
-                              resulting in a 40% increase in requests for assistance from local households.</span></li>
-                            <li><span>Supervised and facilitated meetings in rural villages,
-                              introducing programs to promote female empowerment and increasing female participation by 70%.
-                              This led to a significant increase in women's engagement and contributions,
-                              reaching 60% in discussions.</span></li>
-                            </ul>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="work reveal">
-                    <div class="title"><span class="text-shadow underline">Education</span></div>
-                    <div class="data">
-                      <div class="dates">Sep 2018 - Jul 2021</div>
-                      <div class="company">Computer Science | University of Portsmouth, Portsmouth</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>Studied: Java, Javascript, Python, SQL, Haskell, Fundamental Data Structures</span></li>
-                            <li><span>Skills enhanced: HTML, CSS, Computer Architecture (Logic Gates)</span></li>
-                            <li><span>Chosen modules: 3D Computer Graphics and Animation, Japanese</span></li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="data">
-                      <div class="dates">Sep 2016 – Jul 2018</div>
-                      <div class="company">A Levels | Welbeck Defence Sixth Form College, Loughborough</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>A Levels: Design and Technology (Systems and Control Technology), Electronics, Maths, Physics (AS) (BDE)</span></li>
-                            <li><span>Studied: PICAXE programming, Electrical engineering, Building a portfolio, Military Cadet knowledge</span></li>
-                            <li><span>Skills enhanced: Leadership and team management, Fitness management</span></li>
-                            </ul>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="data">
-                      <div class="dates">2013 – 2015</div>
-                      <div class="company">GCSEs | Tanglin Trust School (TTS), Singapore</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>GCSEs: English (Lit and Lang), Maths, Physics, Chemistry, Biology, ICT, Art, History, Chinese (A - C) </span></li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="work1 reveal">
-                    <div class="title"><span class="text-shadow underline">Extra Curricular</span></div>
-                    <div class="data">
-                      <div class="dates">2021 – Present</div>
-                      <div class="company">Developing Websites for my own ventures (Photography & Art) and others</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>Developed websites; using JS, HTML, CSS, PHP.
-                              Using UI/UX layouts in Figma, and agile work methods.
-                              Improved engagement by an average of 75%, for clients and personal ventures.</span></li>
-                            <li><span>Learning to improve the overall usability and effectiveness of projects,
-                              trying to create at least 3 personal projects for my portfolio each month.</span></li></ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="data">
-                      <div class="dates">2018</div>
-                      <div class="company">The Institute of Leadership & Management (ILM) Level 3 Award | Loughborough</div>
-                      <div class="space"></div>
-                      <div class="experience">
-                        <div>
-                          <ul>
-                            <li class="a"><span>Growing leadership skills within cadet training challenges,
-                              finishing 1st on average, and improving team working skills; during Welbeck DSFC.</span></li>
-                            <li><span>Coached boarding house hockey, teaching 6 sessions per month;
-                              improving the house competitions by ranking 2nd each year, instead of 4th in previous years.</span></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+          <div class="skillBox reveal">
+            <div class="title1"><div class="button2"></div><span class="summary2 underline1">Skills</span></div>
+              <div class="hidden_content1">
+                <p>HTML, CSS, Javascript</p>
+                <div class="skillbg">
+                  <div class="skillfill" style="animation: skillf 1s forwards 0.5s;"></div>
                 </div>
-
-                <div class="sidebar">
-                  <div class="sidebarContent">
-                    <div class="contactsSidebar">
-                        <p>Contact</p>
-                        <p>Email</p>
-                        <p><a href="mailto: amyhoanganhjohnson@gmail.com"><span class="hoverA">amyhoanganhjohnson@gmail.com</span></a></p>
-                        <p>Phone</p>
-                        <p><a href="tel: 07587809672"><span class="hoverA">+44 7587 809762</span></a></p>
-                    </div>
-
-                    <div class="skillBox">
-                      <p><span class="underline1">Skills</span><p>
-                      <p>HTML, CSS, Javascript</p>
-                      <div class="skillbg">
-                        <div class="skillfill" style="animation: skillf 1s forwards 0.5s;"></div>
-                      </div>
-                      <p>UI/UX, Figma, Adobe</p>
-                      <div class="skillbg">
-                        <div class="skillfill" style="animation: UI 1s forwards 1.5s;"></div>
-                      </div>
-                      <p>Java, Python, PHP, Haskell</p>
-                      <div class="skillbg">
-                        <div class="skillfill" style="animation: Java 1s forwards 2.5s;"></div>
-                      </div>
-                    </div>
-
-                    <div class="skillBox">
-                      <p>Tools</p>
-                      <div class="toolBox">
-                          <p>Visual Studio Code</p>
-                          <p>Autodesk 3Ds Max</p>
-                          <p>Adobe</p>
-                          <p>Figma</p>
-                          <p>Microsoft 365</p>
-                          <p>PICAXE</p>
-                      </div>
-                    </div>
-
-                    <div class="skillBox">
-                      <p>Languages</p>
-                      <p class="b">Intermediate|Native</p>
-                      <div class="toolBox">
-                          <p>English</p>
-                          <p>Portuguese</p>
-                      </div>
-                      <p class="b">Beginner</p>
-                      <div class="toolBox">
-                          <p>Chinese</p>
-                          <p>Bahasa Malaya</p>
-                          <p>French</p>
-                          <p>Japanese</p>
-                          <p>Vietnamese</p>
-                      </div>
-                    </div>
-
-                    <div class="spaceside"></div>
-                  </div>
+                <p>UI/UX, Figma, Adobe</p>
+                <div class="skillbg">
+                  <div class="skillfill" style="animation: UI 1s forwards 1.5s;"></div>
                 </div>
+                <p>Java, Python, PHP, Haskell</p>
+                <div class="skillbg">
+                  <div class="skillfill" style="animation: Java 1s forwards 2.5s;"></div>
+                </div>
+              </div>
+          </div>
 
+          <div class="skillBox reveal">
+            <div class="title1"><div class="button2"></div><span class="summary2 underline1">Tools</span></div>
+            <div class="toolBox hidden_content1">
+                <p>Visual Studio Code</p>
+                <p>Autodesk 3Ds Max</p>
+                <p>Adobe</p>
+                <p>Figma</p>
+                <p>Microsoft 365</p>
+                <p>PICAXE</p>
             </div>
+          </div>
 
+          <div class="skillBox reveal">
+            <div class="title1"><div class="button3"></div><span class="summary2 underline1">Languages</span></div>
+            <div class="hidden_content2">
+                <div class="skillBox1">
+                  <div>
+                    <p class="b">Native|Intermediate</p>
+                    <div class="toolBox">
+                        <p>English</p>
+                        <p>Portuguese</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="b">Beginner</p>
+                    <div class="toolBox">
+                        <p>Chinese</p>
+                        <p>Bahasa Malaya</p>
+                        <p>French</p>
+                        <p>Japanese</p>
+                        <p>Vietnamese</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
 
+        </div>
       </div>
+  </div>
 
+  <!-- Footer -->
 </body>
 </html>
