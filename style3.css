@@ -145,8 +145,12 @@
     padding: 2vh 0vh 4vh 0vh;
   }
 
-  .hidden_content1, .hidden_content2 {
+  .hidden_content1 {
     padding: 1vh 0vh 2vh 0vh;
+  }
+
+  .hidden_content2 {
+    padding: 1vh 0vh 10vh 0vh;
   }
 
   .content2contact {
@@ -273,13 +277,7 @@
   .b {
     font-size: 2.25vh;
   }
-  
-  /* footer */
 
-  .footer {
-    height: 10vh;
-    background-color: green;
-  }
 
 }
 
