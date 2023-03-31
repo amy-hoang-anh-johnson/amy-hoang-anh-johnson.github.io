@@ -688,24 +688,53 @@
   /* Site: Portfolio */
 
   .content1 {
-    width: 90%;
-    height: 100vh;
+    width: 100%;
     background-color: white;
     grid-area: 1 / 1 / span 1 / span 2;
-    display: grid;
-    grid-template-columns: 100%;
-    align-self: center;
-    margin: 2.5vh 0vh 0vh 5vh;
-  }
-
-  .text {
-    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .portfolioGrid {
+    padding: 5vh 0vh 0vh 0vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 90%;
+    width: 80%;
+    height: 90%;
   }
+
+  .text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .text li {
+    margin: 0vh 0vh 0vh 2.5vw;
+  }
+
+  .portfolioContent {
+  }
+
+  .portfolioTitle {
+    padding: 0vh 0vh 2vh 0vh;
+    margin: 0vh 0vh 0vh 3.5vh;
+  }
+
+  .portfolioImg {
+    width: 80%;
+    height: 20vh;
+    background-color: purple;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolioText {
+    padding: 2vh 0vh 10vh 0vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   
 }
